@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container fade-in">
+    <h1 class="title">🌤 Weather Dashboard</h1>
+
+    <form id="weather-form" class="search-box">
+      <input id="city-input" placeholder="Search city..." required />
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="error" class="error"></p>
+
+    <div id="result" class="weather-card hidden fade-in">
+      <h2 id="location" class="location"></h2>
+
+      <img id="icon" class="weather-icon" />
+
+      <div class="temp-box">
+        <span id="temp" class="temp"></span>
+        <span id="description" class="desc"></span>
+      </div>
+
+      <div class="details">
+        <p id="feels"></p>
+        <p id="humidity"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
